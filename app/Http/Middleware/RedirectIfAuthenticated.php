@@ -21,15 +21,10 @@ class RedirectIfAuthenticated
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
-                return redirect($this->home_route());
+                return redirect(RouteServiceProvider::HOME);
             }
         }
 
         return $next($request);
-    }
-
-    private function home_route()
-    {
-        return('/fft_summary');
     }
 }
