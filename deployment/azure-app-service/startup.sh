@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Loading Nginx extras"
+apt-get update
 apt install -y nginx-extras
 
 echo "Replacing nginx configuration for serving PHP 8.x-based applications"
