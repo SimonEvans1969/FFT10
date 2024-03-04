@@ -24,11 +24,6 @@ Route::get('fft_summary/getdata', 'FeedbackController@getSummary')->name('fft_su
 Route::get('feedback', 'FeedbackController@detail')->middleware('auth');;
 Route::get('feedback/getdata', 'FeedbackController@getDetail')->name('feedback/getdata')->middleware('auth');
 
-// SDE REMOVE LATER
-Route::get('feedback2', 'FeedbackController@detail2')->middleware('auth');;
-Route::get('feedback2/getdata', 'FeedbackController@getDetail2')->name('feedback/getdata')->middleware('auth');
-// SDE REMOVE LATER
-
 Route::get('allstats', 'FeedbackController@allstats')->middleware('auth');;
 Route::get('allstats/getdata', 'FeedbackController@getAllStats')->name('allstats/getdata')->middleware('auth');
 
