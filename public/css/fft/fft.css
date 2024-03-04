@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.text-large {
+    font-size: 125%;
+}
+
+/* overwrite default selectpicker styles */
+.fft-category-select {
+    width: 100% !important;
+    background-color: white;
+    border-bottom-color: rgb(206,212,218);
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(206,212,218);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(206,212,218);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(206,212,218);
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    color:rgb(73,80,87);
+    margin-right: 44px; /* size of font box */
+}
+
+.fft-category-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+}
