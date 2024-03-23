@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FeedbackController@summary')->middleware('auth');;
 
 // Landing page - rename as home later...
 Route::get('fft_summary', 'FeedbackController@summary')->middleware('auth');;
